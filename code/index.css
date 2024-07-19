@@ -335,13 +335,13 @@ Footer {
 }
 
 .footer-link {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 0;
   align-items: center;
 }
 
 .footer-link a {
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 .footer-link i {
@@ -492,12 +492,12 @@ Footer {
   }
 
   .footer-link a {
-    margin-right: 0.5rem;
+    margin-right: 0.1rem;
   }
 
   .footer-link i {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 }
 
