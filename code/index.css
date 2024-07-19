@@ -336,17 +336,14 @@ Footer {
 
 .footer-link {
   padding-top: 5px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
+  width: 100%;
   align-items: center;
 }
 
-.footer-link a {
-  margin-right: 0.2rem;
-}
-
 .footer-link i {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   color: white;
 }
 
