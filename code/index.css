@@ -8,15 +8,16 @@ nav {
   display: flex;
   flex-direction: row;
   min-height: 8vh;
-  justify-content: space-between;
+  width: auto;
+  justify-content: space-around;
   background-color: rgb(11, 11, 83);
   align-items: center;
-  padding: 30px 50px;
+  padding: 30px 40px;
 }
 
 .logo a {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -50,6 +51,7 @@ nav {
 
 .links a:hover {
   color: rgb(223, 223, 23);
+  transition: 0.3s ease-in-out;
 }
 
 /* burger navigation */
@@ -96,6 +98,7 @@ nav {
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .hero-p span {
@@ -104,13 +107,18 @@ nav {
   font-weight: bolder;
 }
 
+.h-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
 .resume {
   border: none;
   border-radius: 10px;
   width: auto;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-right: 50px;
+  margin-bottom: 2rem;
+  margin-right: 1px;
   padding: 13px;
   letter-spacing: 1px;
   font-size: 1rem;
@@ -277,8 +285,8 @@ textarea {
 .send-btn {
   border: none;
   border-radius: 10px;
-  width: 30%;
-  padding: 10px;
+  width: 45%;
+  padding: 10px 5px;
   font-size: 1rem;
   margin: 30px 0;
   font-weight: 500;
@@ -308,7 +316,7 @@ Footer {
 
 .footer-logo a {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -326,13 +334,19 @@ Footer {
   margin: 20px 0;
 }
 
-.footer-link a {
-  margin-right: 1rem;
+.footer-link {
+  padding-top: 15px;
+  padding-bottom: 0;
+  align-items: center;
 }
 
-.footer-link img {
-  width: 25px;
-  height: 25px;
+.footer-link a {
+  margin-right: 0.5rem;
+}
+
+.footer-link i {
+  width: 100px;
+  height: 100px;
   color: white;
 }
 
@@ -399,6 +413,10 @@ Footer {
 
 /* medium */
 @media (min-width: 768px) {
+  .logo a {
+    font-size: 1.7rem;
+  }
+
   /* Hero */
   .hero {
     height: auto;
@@ -449,9 +467,62 @@ Footer {
     margin-bottom: 20px;
     text-align: center;
   }
+
+  /* Footer */
+
+  Footer {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    justify-content: space-around;
+  }
+
+  .footer-logo a {
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin: 20px 0;
+  }
+
+  .footer-link a {
+    margin-right: 0.5rem;
+  }
+
+  .footer-link i {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* medium */
+@media (min-width: 901px) {
+  /* Navbar */
+
+  .logo a {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .logo a span {
+    color: rgb(223, 223, 23);
+  }
+
+  .links {
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
+
 @media (min-width: 992px) {
   .logo a {
     font-size: 2rem;
@@ -464,7 +535,7 @@ Footer {
   .links {
     display: flex;
     width: 40%;
-    gap: 10px;
+    gap: 30px;
   }
 
   /* Hero */
@@ -568,12 +639,7 @@ Footer {
 
   .footer-logo a {
     color: white;
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-size: 2rem;
   }
 
   .copyright {
